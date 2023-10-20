@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body align="center">
+ <h1><u>Edit Employee Details !!!!!</u></h1><br><br>
+   <form action="/update" method="post">
+   <label>FirstName</label>
+   <input type="text" name="firstName" placeholder="Enter First Name"><br>
+   <p th:text="${errorMessage}" style="color:red;"></p>
+   <label>LastName</label>
+   <input type="text" name="lastName" placeholder="Enter Last Name">
+     <p th:text="${errorMessage1}" style="color:red;"></p>
+   <label>Email</label>
+   <input type="email" name="email" placeholder="Enter Already Register Email Address"><br>
+    <p th:text="${errorMessage8}" style="color:red;"></p>
+   <label>ContactNumber</label>
+   <input type="number" name="number" placeholder="Enter Contact Number"><br>
+   <p th:text="${errorMessage5}" style="color:red;"></p>
+   
+   <button>submit</button>
+   
+   </form>
+   <br><br>
+  <a href="employeeMenu"> <button>Back</button></a>
+</body>
+</html>

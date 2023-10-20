@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body align="center">
+<h1><u>Register Employee Form !!!!!</u></h1>
+    
+    <form action="/add"  method="post">
+
+       
+            <label >First Name:</label>
+            <input type="text"  name="firstName" placeholder="Enter First Name"><br>
+  <p th:text="${errorMessage}" style="color:red;"></p>
+            <label >Last Name:</label>
+            <input type="text"  name="lastName" placeholder="Enter Last Name"><br>
+     <p th:text="${errorMessage1}" style="color:red;"></p>
+            <label >Email:</label>
+            <input type="email"  name="email" placeholder="Enter Email Address" ><br>
+            <p th:text="${errorMessage2}" style="color:red;"></p>
+           <p th:text="${errorMessage4}" style="color:red;"></p>
+            <label >Contact Number:</label>
+            <input type="number"  name="number" placeholder="Enter Contact Number"><br>
+          <p th:text="${errorMessage5}" style="color:red;"></p>
+                 
+                 
+        <button>Submit</button><br><br>
+       
+    </form>
+    <a href="employeeMenu"><button>Back</button></a>
+</body>
+</html>
